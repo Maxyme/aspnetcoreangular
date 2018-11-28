@@ -1,0 +1,14 @@
+<div *ngIf="todo">
+
+    <h2>{{todo.name | uppercase}} Details</h2>
+    <div>
+      <label>name:
+        <input [(ngModel)]="todo.name" placeholder="name"/>
+      </label>
+      <label>completed:
+          <input type="checkbox" [(ngModel)]="todo.isCompleted" placeholder="name"/>
+      </label>
+    </div>
+    <button (click)="save()">save</button>
+  
+  </div>
